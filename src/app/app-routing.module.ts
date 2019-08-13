@@ -5,7 +5,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const indexRoute:Route = {
   path: '',
-  loadChildren: './dashboard/dashboard.module#DashboardModule'
+  pathMatch:'full',
+  redirectTo:"/dashboard", 
 }
 
 const fallbackRoute:Route = {
