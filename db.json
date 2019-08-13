@@ -23,42 +23,6 @@
       "name": "Hellboy",
       "release": "13-Sept-2018 06:48:52 GMT+0000",
       "image": "http://cdn.collider.com/wp-content/uploads/2019/02/hellboy-reboot-poster.jpg"
-    },
-    {
-      "image": "test",
-      "name": "test",
-      "release": "2019-08-13T09:09:10.381Z",
-      "id": 5
-    },
-    {
-      "image": "test",
-      "name": "test",
-      "release": "2019-08-13T09:13:24.167Z",
-      "id": 6
-    },
-    {
-      "image": "test",
-      "name": "test",
-      "release": "2019-08-13T09:16:51.142Z",
-      "id": 7
-    },
-    {
-      "image": "test",
-      "name": "test",
-      "release": "2019-08-13T09:20:48.654Z",
-      "id": 8
-    },
-    {
-      "image": "test",
-      "name": "test",
-      "release": "2019-08-13T09:23:02.321Z",
-      "id": 9
-    },
-    {
-      "image": "https://angular.io/assets/images/logos/angular/logo-nav@2x.png",
-      "name": "tes",
-      "release": "2019-08-13T09:45:46.939Z",
-      "id": 10
     }
   ]
 }

@@ -15,7 +15,10 @@ ul {
 .bg-accent{
     background-color: $accent;
 }
-
+.title{
+  color: #e74c3c;
+  font-weight: 600;
+}
 /*Dashboard*/
 .dashboard-container {
   margin: 25px 0px;
@@ -42,7 +45,8 @@ ul {
 .list-item{
     border: 1px solid $accent;    
     margin: 0 !important;
-    position: relative;        
+    position: relative;   
+    background-color: #fff;     
 }
 
 .details-btn{
