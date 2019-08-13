@@ -11,6 +11,7 @@ import { sortData } from '../shared/utilities/sort';
 export class DashboardComponent implements OnInit {
 
   movies: IMoviesModel[] = [];
+  title = 'Movies';
 
   constructor(private service: DataService) { }
 

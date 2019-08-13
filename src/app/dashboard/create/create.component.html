@@ -1,5 +1,6 @@
 <button class="btn btn-secondary m-2" routerLink="/dashboard">Back</button>
 <div class="container my-5">
+    <h2>Create movies</h2>
   <form [formGroup]="moviesForm" (ngSubmit)="onSubmit(moviesForm.value)" novalidate>
     <div class="form-group">
       <label for="name">Name</label>

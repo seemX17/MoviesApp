@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
 
 $accent: #3498db;
+$secondary:#34495e;
 
 body {
   font-family: 'Montserrat' !important ;
@@ -43,10 +44,17 @@ ul {
 }
 
 .list-item{
-    border: 1px solid $accent;    
+    border: 1px solid $secondary;    
     margin: 0 !important;
     position: relative;   
-    background-color: #fff;     
+    background-color: #fff;    
+    border-radius: 5px; 
+    &:hover{
+      border-color: $accent;
+      .details-btn{
+        visibility: visible;
+      }
+    }
 }
 
 .details-btn{
@@ -55,4 +63,5 @@ ul {
   top: 20px;
   cursor: pointer;
   z-index: 1;
+  visibility: hidden
 }
