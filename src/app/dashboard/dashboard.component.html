@@ -1,27 +1,31 @@
 <div class="container dashboard-container">
+  <a routerLink="/create">
     <button class="btn btn-primary my-3">Create</button>
-    <div class="input-group mb-3">
-        <input type="text" #searchInput (keyup)="0" class="form-control" placeholder="Movies name">
-        <div class="input-group-append">
-            <span class="input-group-text">Search</span>
-        </div>
+  </a>
+  <div class="input-group mb-3">
+    <input type="text" #searchInput (keyup)="0" class="form-control" placeholder="Movies name">
+    <div class="input-group-append">
+      <span class="input-group-text">Search</span>
     </div>
-    <div class="list-container" *ngFor="let item of (Movies | search:searchInput.value)">
-        <div class="row list-item my-5 p-2">
-            <div class="col-4 image-container">
-                <img [src]=item.image>
-            </div>
-            <div class="col-8">
-                <ul>
-                    <li>
-                        <h3>{{item.name | uppercase}}</h3>
-                    </li>
-                    <li>
-                        <span> {{item.release | date:'medium'}}</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+  </div>
+  <div class="list-container" *ngFor="let item of (movies | search:searchInput.value)">
+    <div class="row list-item my-5 p-2">
+      <a routerLink="/details/{{item.id}}">
+        <button class="btn btn-primary details-btn">View</button>
+      </a>
+      <div class="col-4 image-container">
+        <img [src]=item.image>
+      </div>
+      <div class="col-8">
+        <ul>
+          <li>
+            <h3>{{item.name | uppercase}}</h3>
+          </li>
+          <li>
+            <span> {{item.release | date:'medium'}}</span>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>

@@ -8,11 +8,15 @@ import { environment } from 'src/environments/environment';
 export class DataService {
 
   private apiBaseUrl: string = environment.apiBaseUrl;
-  private geturl: string = this.apiBaseUrl + 'movies';
+  private getList: string = this.apiBaseUrl + 'movies';
 
   constructor(private http: HttpClient) { }
 
-  getData() {
-    return this.http.get(this.geturl);
+  getData(id?: number) {
+    if (!id)
+      return this.http.get(this.getList);
+    else
+      return this.http.get(this.getList + "/" + id);
   }
+
 }

@@ -42,4 +42,13 @@ ul {
 .list-item{
     border: 1px solid $accent;    
     margin: 0 !important;
+    position: relative;        
+}
+
+.details-btn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
 }

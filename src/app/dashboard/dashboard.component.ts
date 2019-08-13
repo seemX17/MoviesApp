@@ -10,13 +10,13 @@ import { sortData } from '../shared/utilities/sort';
 })
 export class DashboardComponent implements OnInit {
 
-  Movies: IMoviesModel[] = [];
+  movies: IMoviesModel[] = [];
 
   constructor(private service: DataService) { }
 
   ngOnInit() {
     this.service.getData().subscribe((data) => {
-      this.Movies = sortData.sortDate(Object.values(data));
+      this.movies = sortData.sortDate(Object.values(data));
     })
   }
 
