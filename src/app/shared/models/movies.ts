@@ -1,5 +1,5 @@
 export interface IMoviesModel {
-    id: number,
+    id?: number,
     name: string,
     release: Date,
     image: string

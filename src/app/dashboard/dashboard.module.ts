@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { DetailsComponent } from './details/details.component';
 import { SearchPipe } from '../shared/pipes/search.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -26,9 +27,12 @@ const routes: Routes = [
     CreateComponent,
     DashboardComponent,
     DetailsComponent,
-    SearchPipe],
+    SearchPipe
+  ],
   imports: [
-    CommonModule,
+    CommonModule,    
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule]

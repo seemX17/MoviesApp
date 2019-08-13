@@ -1,1 +1,26 @@
-<p>create works!</p>
+<button class="btn btn-secondary m-2" routerLink="/dashboard">Back</button>
+<div class="container my-5">
+  <form [formGroup]="moviesForm" (ngSubmit)="onSubmit(moviesForm.value)" novalidate>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" required class="form-control" formControlName="name" id="name" placeholder="Enter Movie name">
+    </div>
+    <div
+      *ngIf="moviesForm.controls['name'].invalid && (moviesForm.controls['name'].dirty || moviesForm.controls['name'].touched)"
+      class="alert alert-danger">
+      <div *ngIf="moviesForm.controls['name'].errors.required">
+        Name is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="image">Image url</label>
+      <input type="url" required class="form-control" formControlName="image" id="image" placeholder="Enter image url">
+    </div>
+    <div
+      *ngIf="moviesForm.controls['image'].invalid && (moviesForm.controls['image'].dirty || moviesForm.controls['image'].touched)"
+      class="alert alert-danger">      
+        Enter correct image url
+    </div>
+    <button type="submit" [disabled]="!moviesForm.valid" class="btn btn-primary">Submit</button>
+  </form>
+</div>
