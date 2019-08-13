@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+
+$accent: #3498db;
+
+body {
+  font-family: 'Montserrat' !important ;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Common */
+.bg-accent{
+    background-color: $accent;
+}
+
+/*Dashboard*/
+.dashboard-container {
+  margin: 25px 0px;
+
+  .image-container {
+    height: 190px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.list-container {
+  ul {
+    position: absolute;
+    top: 28%;
+  }
+}
+
+.list-item{
+    border: 1px solid $accent;    
+    margin: 0 !important;
+}

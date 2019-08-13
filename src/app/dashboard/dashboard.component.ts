@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../shared/services/data.service';
 import { IMoviesModel } from '../shared/models/movies';
+import { sortData } from '../shared/utilities/sort';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,13 +10,13 @@ import { IMoviesModel } from '../shared/models/movies';
 })
 export class DashboardComponent implements OnInit {
 
-  Movies: IMoviesModel[]= [];
+  Movies: IMoviesModel[] = [];
 
   constructor(private service: DataService) { }
 
   ngOnInit() {
     this.service.getData().subscribe((data) => {
-      this.Movies = Object.values(data);
+      this.Movies = sortData.sortDate(Object.values(data));
     })
   }
 

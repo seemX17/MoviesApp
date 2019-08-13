@@ -4,28 +4,33 @@ import { CreateComponent } from './create/create.component';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { DetailsComponent } from './details/details.component';
+import { SearchPipe } from '../shared/pipes/search.pipe';
 
-const routes:Routes = [
+const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: DashboardComponent
   },
   {
-    path:'create',
+    path: 'create',
     component: CreateComponent
   },
   {
-    path:'details/:id',
+    path: 'details/:id',
     component: DetailsComponent
   }
 ]
 
 @NgModule({
-  declarations: [CreateComponent, DashboardComponent, DetailsComponent],
+  declarations: [
+    CreateComponent,
+    DashboardComponent,
+    DetailsComponent,
+    SearchPipe],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports:[RouterModule]
+  exports: [RouterModule]
 })
 export class DashboardModule { }
