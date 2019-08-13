@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../shared/services/data.service';
+import { IMoviesModel } from '../shared/models/movies';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  Movies: IMoviesModel[]= [];
+
+  constructor(private service: DataService) { }
 
   ngOnInit() {
+    this.service.getData().subscribe((data) => {
+      this.Movies = Object.values(data);
+    })
   }
 
 }
