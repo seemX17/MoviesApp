@@ -1,0 +1,28 @@
+{
+    "movies":[
+        {
+            "id": 1,
+            "name": "Aladdin",
+            "release":"Aug 13 2019",
+            "image":"https://www.bing.com/th?id=OIP.qOhTxKbBr13NmOml2mIR-QHaKj&w=174&h=248&c=7&o=5&pid=1.7"
+        },
+        {
+            "id": 2,
+            "name": "Joker",
+            "release":"July 13 2019",
+            "image":"https://www.bing.com/th?id=OIP.91ZOtLveCrXQ9II6C-PWkAHaJQ&w=174&h=218&c=7&o=5&pid=1.7"
+        },
+        {
+            "id": 3,
+            "name": "Pet Sematary",
+            "release": "Aug 13 2018",
+            "image":"https://media.comicbook.com/2019/02/pet-sematary-poster-2019--1157409.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Hellboy",
+            "release":"jul 13 2018",
+            "image":"http://cdn.collider.com/wp-content/uploads/2019/02/hellboy-reboot-poster.jpg"
+        }
+    ]
+}
