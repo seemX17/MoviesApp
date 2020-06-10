@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ErrorComponent } from './error/error.component';
 import { DataService } from './shared/services/data.service';
 import { HttpClientModule } from '@angular/common/http';
+import * as $ from "jquery";
 
 @NgModule({
   declarations: [

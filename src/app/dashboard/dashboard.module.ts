@@ -6,11 +6,12 @@ import { DashboardComponent } from './dashboard.component';
 import { DetailsComponent } from './details/details.component';
 import { SearchPipe } from '../shared/pipes/search.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ZoomTestComponent } from './zoom-test/zoom-test.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent
+    component: ZoomTestComponent
   },
   {
     path: 'create',
@@ -27,7 +28,8 @@ const routes: Routes = [
     CreateComponent,
     DashboardComponent,
     DetailsComponent,
-    SearchPipe
+    SearchPipe,
+    ZoomTestComponent
   ],
   imports: [
     CommonModule,    
